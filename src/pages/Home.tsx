@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import { latarBelakang, pendahuluan } from '../constants/ConstText';
+import { latarBelakang } from '../constants/ConstText';
 const HomeWrapper = styled.div`
 	display: flex;
 	flex-direction: column;

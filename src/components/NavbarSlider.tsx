@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
 import { Turn as Hamburger } from 'hamburger-react';
-import LogoBS from './LogoBS';
 import { useDom } from '../context/domProvider';
 import { height } from '../constants/ConstStyle';
 const NavbarSliderWrapper = styled.div`
