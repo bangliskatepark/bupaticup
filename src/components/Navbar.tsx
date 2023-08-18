@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
 	console.info(isToggle);
 	return (
 		<NavbarWrapper>
-			<LogoBS />
+			<LogoBS size='60px' />
 			<div>
 				<Hamburger
 					toggle={() => setToggle((prev) => !prev)}

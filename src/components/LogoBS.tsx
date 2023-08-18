@@ -2,8 +2,8 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 interface ILogoBS {
-	size: string;
-	color: string;
+	size?: string;
+	color?: string;
 }
 const LogoBSWrapper = styled.svg<ILogoBS>`
 	width: ${(props) => props.size};
@@ -14,12 +14,13 @@ const LogoBSWrapper = styled.svg<ILogoBS>`
 		fill: ${(props) => props.color};
 	}
 `;
-const LogoBS: React.FC = () => {
+
+const LogoBS: React.FC<ILogoBS> = ({ size = '50px', color = 'white' }) => {
 	return (
 		<LogoBSWrapper
 			viewBox='0 0 1080 1080'
-			size='90px'
-			color='white'>
+			size={size}
+			color={color}>
 			<g id='bangli'>
 				<path d='M98.33,663.53h99.81c9.71,0,18.09,3.04,25.13,9.11,7.04,6.16,10.57,13.59,10.57,22.3v47.44c0,13.87-5.24,25.2-15.71,33.99,14.37,9.07,21.57,21.84,21.57,38.34v21.35c0,17.58-7.05,31.72-21.14,42.42-13.23,10.06-29.75,15.09-49.55,15.09H98.33v-230.03Zm47.98,42.56v51.12h22.13c4.67,0,8.71-1.41,12.14-4.21,3.52-3,5.28-6.53,5.28-10.61v-36.29h-39.56Zm0,144.92h22.71c15.14,0,22.7-4.99,22.7-14.96v-21.35c0-4.17-1.71-7.7-5.14-10.6-3.43-2.81-7.42-4.22-12-4.22h-28.27v51.12Z' />
 				<path d='M316.95,846.93l-9.71,46.63h-48.55l46.84-230.03h63.83l46.69,230.03h-48.69l-9.42-46.63h-40.98Zm8.71-42.56h23.42l-11.71-98.02-11.71,98.02Z' />

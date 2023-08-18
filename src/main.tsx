@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Layout from './Layouts/Layout';
 import { DomProvider } from './context/domProvider';
+import Navigator from './router/router';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
 		<DomProvider>
-			<Layout />
+			<Navigator />
 		</DomProvider>
 	</React.StrictMode>
 );

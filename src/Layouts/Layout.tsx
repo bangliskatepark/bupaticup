@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import { Global, css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { height } from '../constants/ConstStyle';
-import Home from '../pages/Home';
+import { Outlet } from 'react-router-dom';
 import NavbarSlider from '../components/NavbarSlider';
 import { IFEComp } from '../components/IFEComp';
 import { useDom } from '../context/domProvider';
@@ -36,7 +36,7 @@ const Layout = () => {
 					<React.Fragment>
 						<Navbar />
 						<MainLayout>
-							<Home />
+							<Outlet />
 						</MainLayout>
 					</React.Fragment>
 				}
