@@ -78,6 +78,7 @@ const images: ReadonlyArray<ReactImageGalleryItem> = [
 ];
 const VeneuWrapper = styled.div`
 	h1 {
+		margin-top: 2rem;
 		text-transform: capitalize;
 		font-size: 24px;
 		text-align: center;
@@ -126,8 +127,8 @@ const Veneu = () => {
 						thumbnailPosition='right'
 						isRTL={true}
 						showIndex={true}
-						useBrowserFullscreen={true}
-						showFullscreenButton={false}
+						useBrowserFullscreen={false}
+						useTranslate3D={true}
 					/>
 				</div>
 				<div style={{ height: 280, width: '100%' }}>
