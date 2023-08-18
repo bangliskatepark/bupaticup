@@ -10,14 +10,23 @@ const HomeWrapper = styled.div<IHomeWrapper>`
 	flex-direction: column;
 	align-items: center;
 	height: 100%;
-	padding: 0.5rem;
 	gap: 1rem;
-	margin-top: 1rem;
+	padding-bottom: 1rem;
 	box-sizing: border-box;
 
 	h1 {
+		margin-top: 1rem;
 		text-transform: capitalize;
 		color: #ffffff;
+	}
+	h1:nth-of-type(2) {
+		margin: 0;
+		border-bottom: 2px solid white;
+	}
+	table {
+		color: white;
+
+		border-bottom: 2px solid white;
 	}
 	div:nth-of-type(1) {
 		height: 50%;
@@ -46,6 +55,7 @@ const HomeWrapper = styled.div<IHomeWrapper>`
 			background-image: url(${(props) => props.img});
 			background-size: cover;
 			background-repeat: no-repeat;
+			background-position: center;
 			width: 100%;
 			height: 100%;
 		}
@@ -58,6 +68,7 @@ const HomeWrapper = styled.div<IHomeWrapper>`
 		border-radius: 10rem;
 		h1 {
 			color: white;
+			margin: 0;
 		}
 	}
 `;
@@ -69,6 +80,19 @@ const Home: React.FC = () => {
 				<p>{latarBelakang.paragraphone}</p>
 				<p>{latarBelakang.paragraphtwo}</p>
 			</div>
+			<h1>Waktu Pelaksanaan</h1>
+			<table>
+				<td>
+					<tr>Hari/Tanggal</tr>
+					<tr>Waktu</tr>
+					<tr>Tempat</tr>
+				</td>
+				<td>
+					<tr>25 – 27 Agustus 2022</tr>
+					<tr>Pukul 08.00 Wita – Selesai</tr>
+					<tr>Bangli Skatepark</tr>
+				</td>
+			</table>
 			<div>
 				<span />
 			</div>
